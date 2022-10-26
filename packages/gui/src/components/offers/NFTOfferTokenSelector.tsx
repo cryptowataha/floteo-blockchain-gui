@@ -1,9 +1,9 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { WalletType } from '@chia/api';
-import type { CATToken, Wallet } from '@chia/api';
-import { useGetCatListQuery, useGetWalletsQuery } from '@chia/api-react';
-import { useCurrencyCode } from '@chia/core';
+import { WalletType } from '@floteo/api';
+import type { CATToken, Wallet } from '@floteo/api';
+import { useGetCatListQuery, useGetWalletsQuery } from '@floteo/api-react';
+import { useCurrencyCode } from '@floteo/core';
 import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
 type TokenSelectOption = {

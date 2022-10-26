@@ -7,7 +7,7 @@ import {
   Flex,
   Form,
   mojoToChiaLocaleString,
-} from '@chia/core';
+} from '@floteo/core';
 import {
   Card,
   Typography,
@@ -16,7 +16,7 @@ import styled from 'styled-components';
 import {
   useCreateNewWalletMutation,
   useGetWalletBalanceQuery,
-} from '@chia/api-react';
+} from '@floteo/api-react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router';
 import useOpenExternal from '../../hooks/useOpenExternal';
@@ -54,7 +54,7 @@ export default function ProfileAdd() {
   const openExternal = useOpenExternal();
 
   function handleClick() {
-    openExternal('https://faucet.chia.net/');
+    openExternal('https://faucet.floteo.net/');
   }
 
   async function handleSubmit(data: CreateProfileData) {

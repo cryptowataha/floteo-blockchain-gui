@@ -2,8 +2,8 @@ const units = require('../../util/units');
 
 describe('units', () => {
   describe('#getUnit', () => {
-    it('gets unit of chia', () => {
-      const result = units.getUnit('chia');
+    it('gets unit of floteo', () => {
+      const result = units.getUnit('floteo');
 
       expect(result).toBe(1);
     });
@@ -22,7 +22,7 @@ describe('units', () => {
 
       expect(result).toBe(1);
     });
-    it('gets unit of chia using alias', () => {
+    it('gets unit of floteo using alias', () => {
       const result = units.getUnit('ch');
 
       expect(result).toBe(1);
@@ -46,8 +46,8 @@ describe('units', () => {
     });
   });
   describe('#getDisplay', () => {
-    it('gets display of chia', () => {
-      const result = units.getDisplay('chia');
+    it('gets display of floteo', () => {
+      const result = units.getDisplay('floteo');
 
       expect(result).toEqual({
         format: '{amount} CH',
@@ -87,13 +87,13 @@ describe('units', () => {
       expect(result).toEqual(1);
     });
     it('modifies an existing unit', () => {
-      units.setUnit('chia', 9);
+      units.setUnit('floteo', 9);
 
-      const result = units.getUnit('chia');
+      const result = units.getUnit('floteo');
 
       expect(result).toEqual(9);
 
-      units.setUnit('chia', 1);
+      units.setUnit('floteo', 1);
     });
   });
   describe('#setDisplay', () => {
@@ -111,12 +111,12 @@ describe('units', () => {
       });
     });
     it('updates an existing display', () => {
-      units.setDisplay('chia', {
+      units.setDisplay('floteo', {
         format: '{amount} TXCH',
         fractionDigits: 0,
       });
 
-      const result = units.getDisplay('chia');
+      const result = units.getDisplay('floteo');
 
       expect(result).toEqual({
         format: '{amount} TXCH',

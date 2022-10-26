@@ -1,14 +1,14 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { WalletType } from '@chia/api';
-import { useGetWalletBalanceQuery } from '@chia/api-react';
+import { WalletType } from '@floteo/api';
+import { useGetWalletBalanceQuery } from '@floteo/api-react';
 import {
   FormatLargeNumber,
   mojoToCATLocaleString,
   mojoToChiaLocaleString,
   useLocale,
-} from '@chia/core';
-import { useWallet } from '@chia/wallets';
+} from '@floteo/core';
+import { useWallet } from '@floteo/wallets';
 
 export type OfferBuilderWalletBalanceProps = {
   walletId: number;

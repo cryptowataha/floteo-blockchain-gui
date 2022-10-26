@@ -11,7 +11,7 @@ export function getConfigRootDir(net = 'mainnet'): string {
 
   return 'CHIA_ROOT' in process.env
     ? untildify(process.env.CHIA_ROOT)
-    : path.join(homedir, '.chia', net);
+    : path.join(homedir, '.floteo', net);
 }
 
 export function readConfigFile(net?: string): string {

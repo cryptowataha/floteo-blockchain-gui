@@ -3,10 +3,10 @@ import { Trans } from '@lingui/macro';
 import styled from 'styled-components';
 import { Typography, Tooltip, IconButton } from '@mui/material';
 import { Delete as DeleteIcon } from '@mui/icons-material';
-import { Table, FormatBytes, FormatConnectionStatus, Card } from '@chia/core';
-import { useService, useGetHarvesterConnectionsQuery } from '@chia/api-react';
-import type { Connection } from '@chia/api';
-import { ServiceName } from '@chia/api';
+import { Table, FormatBytes, FormatConnectionStatus, Card } from '@floteo/core';
+import { useService, useGetHarvesterConnectionsQuery } from '@floteo/api-react';
+import type { Connection } from '@floteo/api';
+import { ServiceName } from '@floteo/api';
 import FarmCloseConnection from './FarmCloseConnection';
 
 const StyledIconButton = styled(IconButton)`

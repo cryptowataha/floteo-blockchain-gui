@@ -16,7 +16,7 @@ import {
   TooltipIcon,
   useShowError,
   mojoToChiaLocaleString,
-} from '@chia/core';
+} from '@floteo/core';
 import {
   Box,
   Button,
@@ -35,8 +35,8 @@ import {
   OfferSummaryRecord,
   OfferTradeRecord,
   OfferCoinOfInterest,
-} from '@chia/api';
-import { useCheckOfferValidityMutation } from '@chia/api-react';
+} from '@floteo/api';
+import { useCheckOfferValidityMutation } from '@floteo/api-react';
 import { colorForOfferState, displayStringForOfferState } from './utils';
 import useAcceptOfferHook from '../../hooks/useAcceptOfferHook';
 import OfferHeader from './OfferHeader';

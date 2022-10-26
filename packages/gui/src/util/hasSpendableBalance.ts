@@ -1,4 +1,4 @@
-import { store, walletApi } from '@chia/api-react';
+import { store, walletApi } from '@floteo/api-react';
 import BigNumber from 'bignumber.js';
 
 export default async function hasSpendableBalance(

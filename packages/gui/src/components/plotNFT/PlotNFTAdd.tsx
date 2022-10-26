@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react';
 import { useNavigate } from 'react-router';
 import { Trans } from '@lingui/macro';
-import { useCreateNewPoolWalletMutation } from '@chia/api-react';
+import { useCreateNewPoolWalletMutation } from '@floteo/api-react';
 import { ChevronRight as ChevronRightIcon } from '@mui/icons-material';
-import { Flex, Suspender } from '@chia/core';
+import { Flex, Suspender } from '@floteo/core';
 import PlotNFTState from '../../constants/PlotNFTState';
 import useUnconfirmedPlotNFTs from '../../hooks/useUnconfirmedPlotNFTs';
 import PlotNFTSelectPool, { SubmitData } from './select/PlotNFTSelectPool';
@@ -30,7 +30,7 @@ export default function PlotNFTAdd(props: Props) {
     } = data;
 
     const { transaction, ...rest } = await createNewPoolWallet({
-      initialTargetState, 
+      initialTargetState,
       fee,
     }).unwrap();
 

@@ -12,8 +12,8 @@ let page: Page;
     stopAllChia()
     electronApp = await electron.launch({ args: ['./build/electron/main.js'] });
     page = await electronApp.firstWindow();
-    
-  }); 
+
+  });
 
   test.afterAll(async () => {
     await page.close();
@@ -26,18 +26,18 @@ test('Confirm Enable Auto Login feature works as expected. ', async () => {
   // And I click the Setting's Gear
   await page.locator('[data-testid="DashboardSideBar-settings"]').click();
 
-  //And I disable Auto Login feature 
+  //And I disable Auto Login feature
   await page.locator('input[type="checkbox"]').uncheck();
 
-  //When I log out and back in 
+  //When I log out and back in
   await page.close();
   electronApp = await electron.launch({ args: ['./build/electron/main.js'] });
   page = await electronApp.firstWindow();
 
-  //Then user should have to select a Wallet 
+  //Then user should have to select a Wallet
     await page.locator('button:has-text("Wallet 11922132445Syncing")').click();
-      
-  // When I re-enable Auto Login 
+
+  // When I re-enable Auto Login
   await page.locator('[data-testid="DashboardSideBar-settings"]').click();
   await page.locator('input[type="checkbox"]').check();
 
@@ -50,7 +50,7 @@ test('Confirm Enable Auto Login feature works as expected. ', async () => {
   page = await electronApp.firstWindow();
   await new LoginPage(page).login('password2022!@')
   await page.locator('[data-testid="DashboardSideBar-settings"]').click();
-  await page.waitForURL('file:///Users/jahifaw/Documents/Code/chia-tn-pw-latest/chia-blockchain/chia-blockchain-gui/packages/gui/build/renderer/index.html#/dashboard/settings/general');
+  await page.waitForURL('file:///Users/jahifaw/Documents/Code/floteo-tn-pw-latest/floteo-blockchain/floteo-blockchain-gui/packages/gui/build/renderer/index.html#/dashboard/settings/general');
   await page.close();
   stopAllChia()
 });

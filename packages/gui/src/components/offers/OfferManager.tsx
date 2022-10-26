@@ -25,8 +25,8 @@ import {
   Tooltip,
   LayoutDashboardSub,
   MenuItem,
-} from '@chia/core';
-import { OfferSummaryRecord, OfferTradeRecord } from '@chia/api';
+} from '@floteo/core';
+import { OfferSummaryRecord, OfferTradeRecord } from '@floteo/api';
 import {
   Box,
   Checkbox,
@@ -52,7 +52,7 @@ import {
   useCancelOfferMutation,
   useGetOfferDataMutation,
   useGetWalletsQuery,
-} from '@chia/api-react';
+} from '@floteo/api-react';
 import {
   colorForOfferState,
   displayStringForOfferState,

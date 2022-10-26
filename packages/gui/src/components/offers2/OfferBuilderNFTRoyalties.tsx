@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import type { NFTInfo } from '@chia/api';
-import { useGetCatListQuery } from '@chia/api-react';
+import type { NFTInfo } from '@floteo/api';
+import { useGetCatListQuery } from '@floteo/api-react';
 import {
   CopyToClipboard,
   Flex,
@@ -15,7 +15,7 @@ import {
   mojoToChiaLocaleString,
   mojoToCAT,
   mojoToCATLocaleString,
-} from '@chia/core';
+} from '@floteo/core';
 import { Box, Typography } from '@mui/material';
 import useOfferBuilderContext from '../../hooks/useOfferBuilderContext';
 import styled from 'styled-components';

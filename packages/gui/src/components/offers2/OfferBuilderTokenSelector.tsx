@@ -1,9 +1,9 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { WalletType } from '@chia/api';
+import { WalletType } from '@floteo/api';
 import { useFormContext, useWatch } from 'react-hook-form';
-import type { CATToken, Wallet } from '@chia/api';
-import { useGetCatListQuery, useGetWalletsQuery } from '@chia/api-react';
+import type { CATToken, Wallet } from '@floteo/api';
+import { useGetCatListQuery, useGetWalletsQuery } from '@floteo/api-react';
 import {
   FormControl,
   InputLabel,

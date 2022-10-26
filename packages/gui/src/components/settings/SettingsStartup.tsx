@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Flex, SettingsLabel } from '@chia/core';
+import { Flex, SettingsLabel } from '@floteo/core';
 import {
   FormGroup,
   FormControlLabel,
@@ -28,7 +28,7 @@ export default function SettingsStartup() {
                   checked={enableAutoLogin}
                   onChange={() => setEnableAutoLogin(!enableAutoLogin)}
                   inputProps={{ 'data-testid': 'Enable_Auto_Login' }}
-                 
+
                 />
               }
               label={<Trans>Enable Auto Login</Trans>}

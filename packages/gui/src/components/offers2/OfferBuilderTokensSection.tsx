@@ -1,10 +1,10 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { Tokens } from '@chia/icons';
-import { Flex } from '@chia/core';
-import { WalletType } from '@chia/api';
-import type { Wallet } from '@chia/api';
-import { useGetWalletsQuery } from '@chia/api-react';
+import { Tokens } from '@floteo/icons';
+import { Flex } from '@floteo/core';
+import { WalletType } from '@floteo/api';
+import type { Wallet } from '@floteo/api';
+import { useGetWalletsQuery } from '@floteo/api-react';
 import { useFieldArray, useWatch } from 'react-hook-form';
 import OfferBuilderSection from './OfferBuilderSection';
 import OfferBuilderToken from './OfferBuilderToken';

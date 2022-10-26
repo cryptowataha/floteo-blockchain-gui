@@ -12,11 +12,11 @@ import {
   mojoToCAT,
   mojoToCATLocaleString,
   useLocale,
-} from '@chia/core';
+} from '@floteo/core';
 import { Box, Divider, IconButton, Typography } from '@mui/material';
 import { Add, Remove } from '@mui/icons-material';
-import { useGetWalletBalanceQuery, useGetWalletsQuery } from '@chia/api-react';
-import { Wallet, WalletType } from '@chia/api';
+import { useGetWalletBalanceQuery, useGetWalletsQuery } from '@floteo/api-react';
+import { Wallet, WalletType } from '@floteo/api';
 import type OfferEditorRowData from './OfferEditorRowData';
 import OfferAssetSelector from './OfferAssetSelector';
 import OfferExchangeRate from './OfferExchangeRate';

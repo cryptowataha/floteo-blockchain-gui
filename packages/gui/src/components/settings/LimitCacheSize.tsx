@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Trans } from '@lingui/macro';
 import { useForm } from 'react-hook-form';
-import { useLocalStorage } from '@chia/core';
+import { useLocalStorage } from '@floteo/core';
 import {
   AlertDialog,
   ButtonLoading,
@@ -9,7 +9,7 @@ import {
   Form,
   TextField,
   useOpenDialog,
-} from '@chia/core';
+} from '@floteo/core';
 
 import { getCacheInstances, removeFromLocalStorage } from '../../util/utils';
 

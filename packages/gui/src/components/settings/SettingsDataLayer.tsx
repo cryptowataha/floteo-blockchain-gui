@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Flex, SettingsLabel } from '@chia/core';
+import { Flex, SettingsLabel } from '@floteo/core';
 import {
   FormGroup,
   FormControlLabel,

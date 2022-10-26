@@ -1,5 +1,5 @@
 import React from 'react';
-import { Back, Flex } from '@chia/core';
+import { Back, Flex } from '@floteo/core';
 import { Trans } from '@lingui/macro';
 import { Typography } from '@mui/material';
 

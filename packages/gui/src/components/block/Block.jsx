@@ -10,8 +10,8 @@ import {
 } from '@mui/material';
 import moment from 'moment';
 import { Trans } from '@lingui/macro';
-import { toBech32m } from '@chia/api';
-import { useGetBlockQuery, useGetBlockRecordQuery } from '@chia/api-react';
+import { toBech32m } from '@floteo/api';
+import { useGetBlockQuery, useGetBlockRecordQuery } from '@floteo/api-react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
   Back,
@@ -27,7 +27,7 @@ import {
   useCurrencyCode,
   mojoToChia,
   Suspender,
-} from '@chia/core';
+} from '@floteo/core';
 import { hex_to_array, arr_to_hex, sha256 } from '../../util/utils';
 import BlockTitle from './BlockTitle';
 

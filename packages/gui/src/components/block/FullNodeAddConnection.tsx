@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Button, DialogActions, Flex, Form, TextField } from '@chia/core';
-import { useOpenFullNodeConnectionMutation } from '@chia/api-react';
+import { Button, DialogActions, Flex, Form, TextField } from '@floteo/core';
+import { useOpenFullNodeConnectionMutation } from '@floteo/api-react';
 import { useForm } from 'react-hook-form';
 import { Alert, Dialog, DialogTitle, DialogContent } from '@mui/material';
 
@@ -37,7 +37,7 @@ export default function FullNodeAddConnection(props: Props) {
     const { host, port } = values;
 
     await openConnection({
-      host, 
+      host,
       port: Number.parseInt(port, 10),
     }).unwrap();
 

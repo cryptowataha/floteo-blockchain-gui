@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { AdvancedOptions, Flex, LayoutDashboardSub, Loading } from '@chia/core';
-import { useGetHarvesterConnectionsQuery, useGetTotalHarvestersSummaryQuery } from '@chia/api-react';
+import { AdvancedOptions, Flex, LayoutDashboardSub, Loading } from '@floteo/core';
+import { useGetHarvesterConnectionsQuery, useGetTotalHarvestersSummaryQuery } from '@floteo/api-react';
 import FarmHeader from './FarmHeader';
 import FarmLatestBlockChallenges from './FarmLatestBlockChallenges';
 import FarmFullNodeConnections from './FarmFullNodeConnections';

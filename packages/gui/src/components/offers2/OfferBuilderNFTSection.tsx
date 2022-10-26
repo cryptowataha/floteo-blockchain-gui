@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { NFTs } from '@chia/icons';
-import { Flex } from '@chia/core';
+import { NFTs } from '@floteo/icons';
+import { Flex } from '@floteo/core';
 import { useFieldArray } from 'react-hook-form';
 import OfferBuilderSection from './OfferBuilderSection';
 import OfferBuilderNFT from './OfferBuilderNFT';

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Trans } from '@lingui/macro';
-import { type NFTInfo } from '@chia/api';
-import { useTransferNFTMutation } from '@chia/api-react';
+import { type NFTInfo } from '@floteo/api';
+import { useTransferNFTMutation } from '@floteo/api-react';
 import { useForm } from 'react-hook-form';
 import useBurnAddress from '../../hooks/useBurnAddress';
 import {
@@ -14,7 +14,7 @@ import {
   chiaToMojo,
   useOpenDialog,
   useShowError,
-} from '@chia/core';
+} from '@floteo/core';
 import {
   Alert,
   Dialog,

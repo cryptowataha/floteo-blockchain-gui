@@ -3,8 +3,8 @@ import { t, Trans } from '@lingui/macro';
 import {
   useGetWalletsQuery,
   useCreateOfferForIdsMutation,
-} from '@chia/api-react';
-import { Flex, ButtonLoading, useOpenDialog, Loading } from '@chia/core';
+} from '@floteo/api-react';
+import { Flex, ButtonLoading, useOpenDialog, Loading } from '@floteo/core';
 import { Grid } from '@mui/material';
 import { useLocalStorage } from '@rehooks/local-storage';
 import OfferLocalStorageKeys from '../offers/OfferLocalStorage';

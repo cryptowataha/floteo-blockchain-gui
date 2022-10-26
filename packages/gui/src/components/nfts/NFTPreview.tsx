@@ -7,7 +7,7 @@ import CheckSvg from '@mui/icons-material/Check';
 import CloseSvg from '@mui/icons-material/Close';
 import QuestionMarkSvg from '@mui/icons-material/QuestionMark';
 import { NotInterested, Error as ErrorIcon } from '@mui/icons-material';
-import { useLocalStorage } from '@chia/core';
+import { useLocalStorage } from '@floteo/core';
 import { isImage, parseExtensionFromUrl } from '../../util/utils.js';
 
 import {
@@ -18,9 +18,9 @@ import {
   Tooltip,
   usePersistState,
   useDarkMode,
-} from '@chia/core';
+} from '@floteo/core';
 import styled from 'styled-components';
-import { type NFTInfo } from '@chia/api';
+import { type NFTInfo } from '@floteo/api';
 import isURL from 'validator/lib/isURL';
 import useVerifyHash from '../../hooks/useVerifyHash';
 
@@ -452,15 +452,15 @@ export default function NFTPreview(props: NFTPreviewProps) {
       width: 100%;
       text-align: center;
     }
-    
+
     body {
       overflow: hidden;
     }
-    
+
     img {
       object-fit: ${fit};
     }
-    
+
     #status-container {
       display: flex;
       flex-direction: row;
@@ -502,7 +502,7 @@ export default function NFTPreview(props: NFTPreviewProps) {
       }
       audio.dark::-webkit-media-controls-current-time-display {
         color: #fff;
-      }     
+      }
       audio.dark::-webkit-media-controls-time-remaining-display {
         color: #fff;
       }

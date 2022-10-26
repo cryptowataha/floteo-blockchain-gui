@@ -1,10 +1,10 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { useGetNetworkInfoQuery } from '@chia/api-react';
-import { CardSimple } from '@chia/core';
+import { useGetNetworkInfoQuery } from '@floteo/api-react';
+import { CardSimple } from '@floteo/core';
 
 export default function FullNodeCardNetworkName() {
-  const { data: networkInfo, isLoading, error } = useGetNetworkInfoQuery(); 
+  const { data: networkInfo, isLoading, error } = useGetNetworkInfoQuery();
   const value = networkInfo?.networkName;
 
   return (

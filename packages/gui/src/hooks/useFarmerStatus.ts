@@ -1,5 +1,5 @@
-import { ServiceName } from '@chia/api';
-import { useService } from '@chia/api-react';
+import { ServiceName } from '@floteo/api';
+import { useService } from '@floteo/api-react';
 import FarmerStatus from '../constants/FarmerStatus';
 import FullNodeState from '../constants/FullNodeState';
 import useFullNodeState from './useFullNodeState';

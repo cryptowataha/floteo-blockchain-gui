@@ -2,8 +2,8 @@ import React, { useMemo, useState } from 'react';
 import { Trans } from '@lingui/macro';
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
-import { Button, Flex, Form, TextField, Loading } from '@chia/core';
-import { useSetRewardTargetsMutation, useGetRewardTargetsQuery } from '@chia/api-react';
+import { Button, Flex, Form, TextField, Loading } from '@floteo/core';
+import { useSetRewardTargetsMutation, useGetRewardTargetsQuery } from '@floteo/api-react';
 import {
   Alert,
   Dialog,
@@ -32,7 +32,7 @@ export default function FarmManageFarmingRewards(props: Props) {
   const { onClose, open } = props;
   const [setRewardTargets] = useSetRewardTargetsMutation();
   const { data, isLoading } = useGetRewardTargetsQuery();
-  
+
   const [error, setError] = useState<Error | null>(null);
   const methods = useForm<FormData>({
     mode: 'onChange',
@@ -77,7 +77,7 @@ export default function FarmManageFarmingRewards(props: Props) {
 
     try {
       await setRewardTargets({
-        farmerTarget, 
+        farmerTarget,
         poolTarget,
       }).unwrap();
       handleClose();

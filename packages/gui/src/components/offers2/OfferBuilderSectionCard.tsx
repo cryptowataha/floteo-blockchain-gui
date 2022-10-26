@@ -1,5 +1,5 @@
 import React, { ReactNode, ReactElement } from 'react';
-import { Flex } from '@chia/core';
+import { Flex } from '@floteo/core';
 import { Box, CardActionArea, Collapse, Typography } from '@mui/material';
 import useOfferBuilderContext from '../../hooks/useOfferBuilderContext';
 

@@ -1,17 +1,17 @@
-import { WalletType } from '@chia/api';
+import { WalletType } from '@floteo/api';
 import { t } from '@lingui/macro';
 import type { ChipProps } from '@mui/material';
 import type {
   OfferSummaryAssetInfo,
   OfferSummaryInfos,
   OfferSummaryRecord,
-} from '@chia/api';
+} from '@floteo/api';
 import {
   mojoToCAT,
   mojoToChia,
   mojoToCATLocaleString,
   mojoToChiaLocaleString,
-} from '@chia/core';
+} from '@floteo/core';
 import NFTOfferExchangeType from './NFTOfferExchangeType';
 import OfferState from './OfferState';
 import OfferAsset from './OfferAsset';

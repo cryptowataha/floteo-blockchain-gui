@@ -7,10 +7,10 @@ import {
   FormatLargeNumber,
   TooltipIcon,
   mojoToCATLocaleString,
-} from '@chia/core';
+} from '@floteo/core';
 import { Box, Typography } from '@mui/material';
 import useAssetIdName from '../../hooks/useAssetIdName';
-import { WalletType } from '@chia/api';
+import { WalletType } from '@floteo/api';
 import useNFTMinterDID from '../../hooks/useNFTMinterDID';
 import { formatAmountForWalletType } from './utils';
 import { launcherIdToNFTId } from '../../util/nfts';

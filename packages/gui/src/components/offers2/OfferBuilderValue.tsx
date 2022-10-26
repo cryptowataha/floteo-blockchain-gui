@@ -9,7 +9,7 @@ import {
   TextField,
   Tooltip,
   FormatLargeNumber,
-} from '@chia/core';
+} from '@floteo/core';
 import { Box, Typography, IconButton } from '@mui/material';
 import { Remove } from '@mui/icons-material';
 import useOfferBuilderContext from '../../hooks/useOfferBuilderContext';

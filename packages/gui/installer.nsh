@@ -17,12 +17,12 @@ Var NextButton
 Page custom detectOldChiaVersion detectOldChiaVersionPageLeave
 Page custom finish finishLeave
 
-; Add a page offering to uninstall an older build installed into the chia-blockchain dir
+; Add a page offering to uninstall an older build installed into the floteo-blockchain dir
 Function detectOldChiaVersion
-  ; Check the registry for old chia-blockchain installer keys
-  ReadRegStr $ChiaSquirrelInstallLocation HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\chia-blockchain" "InstallLocation"
-  ReadRegStr $ChiaSquirrelInstallVersion HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\chia-blockchain" "DisplayVersion"
-  ReadRegStr $ChiaSquirrelUninstaller HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\chia-blockchain" "QuietUninstallString"
+  ; Check the registry for old floteo-blockchain installer keys
+  ReadRegStr $ChiaSquirrelInstallLocation HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\floteo-blockchain" "InstallLocation"
+  ReadRegStr $ChiaSquirrelInstallVersion HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\floteo-blockchain" "DisplayVersion"
+  ReadRegStr $ChiaSquirrelUninstaller HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\floteo-blockchain" "QuietUninstallString"
 
   StrCpy $UninstallChiaSquirrelInstall ${BST_UNCHECKED} ; Initialize to unchecked so that a silent install skips uninstalling
 

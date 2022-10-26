@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Flex, Loading } from '@chia/core';
-import { useGetNFTInfoQuery } from '@chia/api-react';
+import { Flex, Loading } from '@floteo/core';
+import { useGetNFTInfoQuery } from '@floteo/api-react';
 import { useWatch } from 'react-hook-form';
 import { Grid, Typography, Card } from '@mui/material';
 import NFTCard from '../nfts/NFTCard';

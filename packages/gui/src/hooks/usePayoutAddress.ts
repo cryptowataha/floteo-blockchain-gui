@@ -1,6 +1,6 @@
-import { toBech32m, fromBech32m } from '@chia/api';
-import type { PlotNFT } from '@chia/api';
-import { useSetPayoutInstructionsMutation, useGetNetworkInfoQuery } from '@chia/api-react';
+import { toBech32m, fromBech32m } from '@floteo/api';
+import type { PlotNFT } from '@floteo/api';
+import { useSetPayoutInstructionsMutation, useGetNetworkInfoQuery } from '@floteo/api-react';
 
 export default function usePayoutAddress(nft: PlotNFT): {
   loading: boolean;
@@ -14,7 +14,7 @@ export default function usePayoutAddress(nft: PlotNFT): {
   } = nft;
 
   const [setPayoutInstructions] = useSetPayoutInstructionsMutation();
-  const { data: networkInfo, isLoading } = useGetNetworkInfoQuery(); 
+  const { data: networkInfo, isLoading } = useGetNetworkInfoQuery();
   const networkPrefix = networkInfo?.networkPrefix;
 
   async function handleSetPayoutAddress(newPayoutAddress: string) {
@@ -31,7 +31,7 @@ export default function usePayoutAddress(nft: PlotNFT): {
     }
 
     await setPayoutInstructions({
-      launcherId, 
+      launcherId,
       payoutInstructions: newPayoutInstructions,
     }).unwrap();
   }

@@ -3,12 +3,12 @@ import { Trans } from '@lingui/macro';
 import { Grid, Box, Button } from '@mui/material';
 import styled from 'styled-components';
 
-import { Flex, SettingsLabel } from '@chia/core';
+import { Flex, SettingsLabel } from '@floteo/core';
 import { Switch, FormGroup, FormControlLabel } from '@mui/material';
 import useHideObjectionableContent from '../../hooks/useHideObjectionableContent';
-import { useLocalStorage } from '@chia/core';
-import { AlertDialog, useOpenDialog } from '@chia/core';
-import { FormatBytes } from '@chia/core';
+import { useLocalStorage } from '@floteo/core';
+import { AlertDialog, useOpenDialog } from '@floteo/core';
+import { FormatBytes } from '@floteo/core';
 import LimitCacheSize from './LimitCacheSize';
 
 export default function SettingsGeneral() {

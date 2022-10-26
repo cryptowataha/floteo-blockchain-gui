@@ -1,5 +1,5 @@
 import { createContext } from 'react';
-import type { CalculateRoyaltiesResponse } from '@chia/api';
+import type { CalculateRoyaltiesResponse } from '@floteo/api';
 
 export interface OfferBuilderContextData {
   readOnly: boolean;

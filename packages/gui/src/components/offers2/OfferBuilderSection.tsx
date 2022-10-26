@@ -4,7 +4,7 @@ import React, {
   cloneElement,
   MouseEvent,
 } from 'react';
-import { Flex } from '@chia/core';
+import { Flex } from '@floteo/core';
 import { Box, IconButton, Collapse, Typography } from '@mui/material';
 import { Add } from '@mui/icons-material';
 import useOfferBuilderContext from '../../hooks/useOfferBuilderContext';

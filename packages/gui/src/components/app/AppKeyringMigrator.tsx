@@ -24,7 +24,7 @@ import {
 import {
   useGetKeyringStatusQuery,
   useMigrateKeyringMutation,
-} from '@chia/api-react';
+} from '@floteo/api-react';
 import {
   Button,
   AlertDialog,
@@ -32,7 +32,7 @@ import {
   useOpenDialog,
   useValidateChangePassphraseParams,
   Suspender,
-} from '@chia/core';
+} from '@floteo/core';
 
 export default function AppKeyringMigrator() {
   const [validateChangePassphraseParams] = useValidateChangePassphraseParams();

@@ -18,8 +18,8 @@ import {
   Visibility as VisibilityIcon,
 } from '@mui/icons-material';
 import { t, Trans } from '@lingui/macro';
-import { AlertDialog, Button, DialogActions, Flex, useValidateChangePassphraseParams, useOpenDialog, Suspender } from '@chia/core';
-import { useGetKeyringStatusQuery, useSetKeyringPassphraseMutation } from '@chia/api-react';
+import { AlertDialog, Button, DialogActions, Flex, useValidateChangePassphraseParams, useOpenDialog, Suspender } from '@floteo/core';
+import { useGetKeyringStatusQuery, useSetKeyringPassphraseMutation } from '@floteo/api-react';
 
 type Props = {
   onSuccess: () => void;

@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { useGetNFTInfoQuery } from '@chia/api-react';
+import { useGetNFTInfoQuery } from '@floteo/api-react';
 import { launcherIdFromNFTId } from '../util/nfts';
 import { stripHexPrefix } from '../util/utils';
 import { didToDIDId } from '../util/dids';
@@ -34,7 +34,7 @@ export default function useNFTMinterDID(nftId: string): UseNFTMinterDIDResult {
 
     if (
       didId ===
-      'did:chia:19qf3g9876t0rkq7tfdkc28cxfy424yzanea29rkzylq89kped9hq3q7wd2'
+      'did:floteo:19qf3g9876t0rkq7tfdkc28cxfy424yzanea29rkzylq89kped9hq3q7wd2'
     ) {
       didName = 'Chia Network';
     }

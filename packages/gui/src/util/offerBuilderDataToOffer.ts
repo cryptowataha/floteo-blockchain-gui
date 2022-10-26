@@ -1,7 +1,7 @@
-import type { Wallet } from '@chia/api';
-import { WalletType } from '@chia/api';
+import type { Wallet } from '@floteo/api';
+import { WalletType } from '@floteo/api';
 import { t } from '@lingui/macro';
-import { chiaToMojo, catToMojo } from '@chia/core';
+import { chiaToMojo, catToMojo } from '@floteo/core';
 import BigNumber from 'bignumber.js';
 import type OfferBuilderData from '../@types/OfferBuilderData';
 import findCATWalletByAssetId from './findCATWalletByAssetId';

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Flex } from '@chia/core';
+import { Flex } from '@floteo/core';
 import { useWatch } from 'react-hook-form';
-import { Offering, Requesting } from '@chia/icons';
+import { Offering, Requesting } from '@floteo/icons';
 import OfferBuilderHeader from './OfferBuilderHeader';
 import OfferBuilderFeeSection from './OfferBuilderFeeSection';
 import OfferBuilderNFTSection from './OfferBuilderNFTSection';

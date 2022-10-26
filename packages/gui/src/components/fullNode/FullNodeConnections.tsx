@@ -6,9 +6,9 @@ import {
   FormatLargeNumber,
   Loading,
   Table,
-} from '@chia/core';
-import { useGetFullNodeConnectionsQuery } from '@chia/api-react';
-import { Connection } from '@chia/api';
+} from '@floteo/core';
+import { useGetFullNodeConnectionsQuery } from '@floteo/api-react';
+import { Connection } from '@floteo/api';
 import { Tooltip } from '@mui/material';
 import { service_connection_types } from '../../util/service_names';
 

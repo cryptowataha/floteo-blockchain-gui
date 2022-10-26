@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import type { NFTInfo } from '@chia/api';
-import { Button, Flex, TooltipIcon } from '@chia/core';
+import type { NFTInfo } from '@floteo/api';
+import { Button, Flex, TooltipIcon } from '@floteo/core';
 import { Typography } from '@mui/material';
 import useViewNFTOnExplorer, {
   NFTExplorer,

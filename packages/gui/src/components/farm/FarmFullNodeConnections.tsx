@@ -3,13 +3,13 @@ import { Trans } from '@lingui/macro';
 import styled from 'styled-components';
 import { Link, Typography, Tooltip, IconButton } from '@mui/material';
 import { Delete as DeleteIcon } from '@mui/icons-material';
-import { Table, Card, FormatBytes, FormatConnectionStatus } from '@chia/core';
+import { Table, Card, FormatBytes, FormatConnectionStatus } from '@floteo/core';
 import {
   useGetFarmerFullNodeConnectionsQuery,
   useService,
-} from '@chia/api-react';
-import type { Connection } from '@chia/api';
-import { ServiceName } from '@chia/api';
+} from '@floteo/api-react';
+import type { Connection } from '@floteo/api';
+import { ServiceName } from '@floteo/api';
 import FarmCloseConnection from './FarmCloseConnection';
 
 const StyledIconButton = styled(IconButton)`
@@ -90,7 +90,7 @@ export default function FarmFullNodeConnections() {
           {'The full node that your farmer is connected to is below. '}
           <Link
             target="_blank"
-            href="https://github.com/Chia-Network/chia-blockchain/wiki/Network-Architecture"
+            href="https://github.com/Chia-Network/floteo-blockchain/wiki/Network-Architecture"
           >
             Learn more
           </Link>

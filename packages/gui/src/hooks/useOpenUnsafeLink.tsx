@@ -7,7 +7,7 @@ import {
   Flex,
   useOpenDialog,
   useOpenExternal,
-} from '@chia/core';
+} from '@floteo/core';
 import {
   Checkbox,
   FormControlLabel,

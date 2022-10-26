@@ -8,7 +8,7 @@
       "esnext"
     ],
     "paths": {
-      "@chia/*": ["./components/*"]
+      "@floteo/*": ["./components/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,

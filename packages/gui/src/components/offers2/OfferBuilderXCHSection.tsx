@@ -1,8 +1,8 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useFieldArray } from 'react-hook-form';
-import { Farming } from '@chia/icons';
-import { Loading, useCurrencyCode } from '@chia/core';
+import { Farming } from '@floteo/icons';
+import { Loading, useCurrencyCode } from '@floteo/core';
 import OfferBuilderSection from './OfferBuilderSection';
 import OfferBuilderWalletAmount from './OfferBuilderWalletAmount';
 import useStandardWallet from '../../hooks/useStandardWallet';

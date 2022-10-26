@@ -9,7 +9,7 @@ import {
   Loading,
   TextField,
   Form,
-} from '@chia/core';
+} from '@floteo/core';
 import {
   Alert,
   Dialog,

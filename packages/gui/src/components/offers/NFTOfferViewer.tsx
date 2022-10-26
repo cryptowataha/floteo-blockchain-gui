@@ -7,9 +7,9 @@ import {
   useCheckOfferValidityMutation,
   useGetNFTInfoQuery,
   useGetNFTWallets,
-} from '@chia/api-react';
-import type { Wallet } from '@chia/api';
-import { OfferSummaryRecord, OfferTradeRecord } from '@chia/api';
+} from '@floteo/api-react';
+import type { Wallet } from '@floteo/api';
+import { OfferSummaryRecord, OfferTradeRecord } from '@floteo/api';
 import {
   Back,
   Button,
@@ -26,7 +26,7 @@ import {
   mojoToChia,
   useColorModeValue,
   useShowError,
-} from '@chia/core';
+} from '@floteo/core';
 import { Box, Divider, Grid, Typography } from '@mui/material';
 import { Warning as WarningIcon } from '@mui/icons-material';
 import { useTheme } from '@mui/material/styles';

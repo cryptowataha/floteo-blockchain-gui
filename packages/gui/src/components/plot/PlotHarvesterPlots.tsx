@@ -7,13 +7,13 @@ import {
   FormatBytes,
   Tooltip,
   StateColor,
-} from '@chia/core';
+} from '@floteo/core';
 import { Warning as WarningIcon } from '@mui/icons-material';
-import { type Plot } from '@chia/api';
+import { type Plot } from '@floteo/api';
 import {
   useGetHarvesterPlotsValidQuery,
   useGetHarvesterQuery,
-} from '@chia/api-react';
+} from '@floteo/api-react';
 import styled from 'styled-components';
 import { Box, Typography } from '@mui/material';
 import PlotStatus from './PlotStatus';

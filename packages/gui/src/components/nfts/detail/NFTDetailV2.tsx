@@ -7,9 +7,9 @@ import {
   LayoutDashboardSub,
   Loading,
   useOpenDialog,
-} from '@chia/core';
-import type { NFTInfo } from '@chia/api';
-import { useGetNFTInfoQuery } from '@chia/api-react';
+} from '@floteo/core';
+import type { NFTInfo } from '@floteo/api';
+import { useGetNFTInfoQuery } from '@floteo/api-react';
 import { Box, Grid, Typography, IconButton, Button } from '@mui/material';
 import { MoreVert } from '@mui/icons-material';
 import { useParams } from 'react-router-dom';
@@ -23,7 +23,7 @@ import NFTContextualActions, {
 } from '../NFTContextualActions';
 import NFTPreviewDialog from '../NFTPreviewDialog';
 import NFTProgressBar from '../NFTProgressBar';
-import { useLocalStorage } from '@chia/core';
+import { useLocalStorage } from '@floteo/core';
 import { isImage } from '../../../util/utils.js';
 import { launcherIdFromNFTId } from '../../../util/nfts';
 import isURL from 'validator/lib/isURL';

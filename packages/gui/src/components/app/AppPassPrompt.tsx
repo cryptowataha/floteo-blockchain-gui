@@ -14,9 +14,9 @@ import {
   KeyboardCapslock as KeyboardCapslockIcon,
   Visibility as VisibilityIcon,
 } from '@mui/icons-material';
-import { PassphrasePromptReason } from '@chia/api';
-import { useUnlockKeyringMutation, useGetKeyringStatusQuery } from '@chia/api-react';
-import { Button, Flex, TooltipIcon, useShowError, Suspender, ButtonLoading } from '@chia/core';
+import { PassphrasePromptReason } from '@floteo/api';
+import { useUnlockKeyringMutation, useGetKeyringStatusQuery } from '@floteo/api-react';
+import { Button, Flex, TooltipIcon, useShowError, Suspender, ButtonLoading } from '@floteo/core';
 
 type Props = {
   reason: PassphrasePromptReason;

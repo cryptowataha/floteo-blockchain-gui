@@ -1,5 +1,5 @@
-import type { Wallet } from '@chia/api';
-import { WalletType } from '@chia/api';
+import type { Wallet } from '@floteo/api';
+import { WalletType } from '@floteo/api';
 
 export default function findCATWalletByAssetId(
   wallets: Wallet[],

@@ -4,13 +4,13 @@ import { useWatch } from 'react-hook-form';
 import {
   fungibleAssetFromAssetIdAndAmount,
   royaltyAssetFromNFTInfo,
-} from '@chia/api';
-import type { CalculateRoyaltiesRequest, NFTInfo } from '@chia/api';
+} from '@floteo/api';
+import type { CalculateRoyaltiesRequest, NFTInfo } from '@floteo/api';
 import {
   useCalculateRoyaltiesForNFTsQuery,
   useGetNFTsByNFTIDsQuery,
-} from '@chia/api-react';
-import { catToMojo, chiaToMojo } from '@chia/core';
+} from '@floteo/api-react';
+import { catToMojo, chiaToMojo } from '@floteo/core';
 import OfferBuilderContext from './OfferBuilderContext';
 
 export type OfferBuilderProviderProps = {

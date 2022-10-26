@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Flex } from '@chia/core';
+import { Flex } from '@floteo/core';
 import { Typography } from '@mui/material';
 
 export type OfferBuilderHeaderProps = {

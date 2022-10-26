@@ -1,10 +1,10 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useNavigate } from 'react-router-dom';
-import { useRefreshPlotsMutation } from '@chia/api-react';
+import { useRefreshPlotsMutation } from '@floteo/api-react';
 import { Grid, Typography, Divider } from '@mui/material';
-import { Button, CardHero, Flex, Link, useOpenDialog } from '@chia/core';
-import { Plots } from '@chia/icons';
+import { Button, CardHero, Flex, Link, useOpenDialog } from '@floteo/core';
+import { Plots } from '@floteo/icons';
 import PlotAddDirectoryDialog from '../PlotAddDirectoryDialog';
 
 export default function PlotOverviewHero() {
@@ -35,7 +35,7 @@ export default function PlotOverviewHero() {
               &nbsp;
               <Link
                 target="_blank"
-                href="https://github.com/Chia-Network/chia-blockchain/wiki/Network-Architecture"
+                href="https://github.com/Chia-Network/floteo-blockchain/wiki/Network-Architecture"
               >
                 Learn more
               </Link>

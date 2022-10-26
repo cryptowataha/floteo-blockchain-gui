@@ -1,8 +1,8 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import { Grid } from '@mui/material';
-import type { Wallet } from '@chia/api';
-import { useGetWalletsQuery } from '@chia/api-react';
+import type { Wallet } from '@floteo/api';
+import { useGetWalletsQuery } from '@floteo/api-react';
 import { useWatch } from 'react-hook-form';
 import OfferBuilderValue from './OfferBuilderValue';
 import OfferBuilderWalletAmount from './OfferBuilderWalletAmount';

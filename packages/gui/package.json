@@ -1,6 +1,6 @@
 {
-  "name": "@chia/gui",
-  "author": "Chia Network <hello@chia.net> (https://chia.net/)",
+  "name": "@floteo/gui",
+  "author": "Chia Network <hello@floteo.net> (https://floteo.net/)",
   "description": "GUI for Chia Blockchain",
   "license": "Apache-2.0",
   "productName": "Chia Blockchain",
@@ -11,8 +11,8 @@
     "node": ">=12.20.0"
   },
   "build": {
-    "productName": "chia",
-    "appId": "net.chia.blockchain",
+    "productName": "floteo",
+    "appId": "net.floteo.blockchain",
     "asar": true,
     "asarUnpack": "**/daemon/**",
     "npmRebuild": false,
@@ -27,7 +27,7 @@
       {
         "name": "Chia URL",
         "schemes": [
-          "chia"
+          "floteo"
         ]
       },
       {
@@ -39,12 +39,12 @@
     ],
     "win": {
       "target": "nsis",
-      "icon": "src/assets/img/chia.ico",
+      "icon": "src/assets/img/floteo.ico",
       "timeStampServer": "http://timestamp.comodoca.com",
-      "executableName": "Chia"
+      "executableName": "Floteo"
     },
     "nsis": {
-      "artifactName": "ChiaSetup-${env.CHIA_INSTALLER_VERSION}.exe",
+      "artifactName": "FloteoSetup-${env.CHIA_INSTALLER_VERSION}.exe",
       "oneClick": false,
       "deleteAppDataOnUninstall": true,
       "allowToChangeInstallationDirectory": true,
@@ -58,7 +58,7 @@
       "artifactName": "${productName}-${env.CHIA_INSTALLER_VERSION}.${ext}",
       "category": "public.app-category.finance",
       "target": "dmg",
-      "icon": "src/assets/img/chia.icns",
+      "icon": "src/assets/img/floteo.icns",
       "entitlements": "entitlements.mac.plist",
       "provisioningProfile": "chiablockchain.provisionprofile",
       "darkModeSupport": true,
@@ -88,7 +88,7 @@
     },
     "linux": {
       "artifactName": "${productName}-${env.CHIA_INSTALLER_VERSION}.${ext}",
-      "icon": "src/assets/img/chia.icns"
+      "icon": "src/assets/img/floteo.icns"
     },
     "deb": {
       "afterInstall": "../../../build_scripts/assets/deb/postinst.sh",
@@ -102,7 +102,7 @@
         "--rpm-rpmbuild-define=_enable_debug_package 0",
         "--rpm-rpmbuild-define=debug_package %{nil}",
         "--rpm-rpmbuild-define=__os_install_post /usr/lib/rpm/brp-compress %{nil}",
-        "--rpm-attr=4755,root,root:/opt/chia/chrome-sandbox"
+        "--rpm-attr=4755,root,root:/opt/floteo/chrome-sandbox"
       ]
     }
   },
@@ -130,11 +130,11 @@
     "test:jest": "jest"
   },
   "dependencies": {
-    "@chia/api": "1.0.0",
-    "@chia/api-react": "1.0.0",
-    "@chia/core": "1.0.0",
-    "@chia/icons": "1.0.0",
-    "@chia/wallets": "1.0.0",
+    "@floteo/api": "1.0.0",
+    "@floteo/api-react": "1.0.0",
+    "@floteo/core": "1.0.0",
+    "@floteo/icons": "1.0.0",
+    "@floteo/wallets": "1.0.0",
     "@electron/remote": "2.0.1",
     "@lingui/core": "3.13.0",
     "@lingui/macro": "3.13.0",

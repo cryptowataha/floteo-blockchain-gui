@@ -1,5 +1,5 @@
-import { ServiceName } from '@chia/api';
-import { Mode } from '@chia/core';
+import { ServiceName } from '@floteo/api';
+import { Mode } from '@floteo/core';
 
 export default {
   [Mode.WALLET]: [ServiceName.WALLET],

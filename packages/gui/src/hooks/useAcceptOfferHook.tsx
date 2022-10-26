@@ -1,14 +1,14 @@
 import React from 'react';
 import BigNumber from 'bignumber.js';
 import { Trans, t } from '@lingui/macro';
-import { OfferSummaryRecord } from '@chia/api';
-import { useTakeOfferMutation } from '@chia/api-react';
+import { OfferSummaryRecord } from '@floteo/api';
+import { useTakeOfferMutation } from '@floteo/api-react';
 import {
   AlertDialog,
   chiaToMojo,
   useOpenDialog,
   useShowError,
-} from '@chia/core';
+} from '@floteo/core';
 import useAssetIdName from './useAssetIdName';
 import OfferAcceptConfirmationDialog from '../components/offers/OfferAcceptConfirmationDialog';
 import OfferAsset from '../components/offers/OfferAsset';

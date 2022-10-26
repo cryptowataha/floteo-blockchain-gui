@@ -4,14 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import BigNumber from 'bignumber.js';
 import { Trans, t } from '@lingui/macro';
 import { useLocalStorage } from '@rehooks/local-storage';
-import { WalletType } from '@chia/api';
-import type { NFTInfo, Wallet } from '@chia/api';
+import { WalletType } from '@floteo/api';
+import type { NFTInfo, Wallet } from '@floteo/api';
 import {
   useCreateOfferForIdsMutation,
   useGetNFTInfoQuery,
   useGetNFTWallets,
   useGetWalletBalanceQuery,
-} from '@chia/api-react';
+} from '@floteo/api-react';
 import {
   Amount,
   AmountProps,
@@ -37,7 +37,7 @@ import {
   useLocale,
   useOpenDialog,
   useShowError,
-} from '@chia/core';
+} from '@floteo/core';
 import {
   Box,
   Divider,

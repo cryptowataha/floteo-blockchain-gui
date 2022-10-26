@@ -1,10 +1,10 @@
 import React, { useMemo } from 'react';
 import { useFormContext } from 'react-hook-form';
-import { Wallet, WalletType, type CATToken } from '@chia/api';
-import { useGetCatListQuery, useGetWalletsQuery } from '@chia/api-react';
+import { Wallet, WalletType, type CATToken } from '@floteo/api';
+import { useGetCatListQuery, useGetWalletsQuery } from '@floteo/api-react';
 import { Trans } from '@lingui/macro';
 import { FormControl, InputLabel, MenuItem } from '@mui/material';
-import { Select, useCurrencyCode } from '@chia/core';
+import { Select, useCurrencyCode } from '@floteo/core';
 import type OfferEditorRowData from './OfferEditorRowData';
 
 type WalletOfferAssetSelection = {

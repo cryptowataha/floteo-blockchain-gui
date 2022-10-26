@@ -1,8 +1,8 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Loading } from '@chia/core';
-import { Fees } from '@chia/icons';
-import { useWallet } from '@chia/wallets';
+import { Loading } from '@floteo/core';
+import { Fees } from '@floteo/icons';
+import { useWallet } from '@floteo/wallets';
 import { useFieldArray } from 'react-hook-form';
 import OfferBuilderSection from './OfferBuilderSection';
 import OfferBuilderValue from './OfferBuilderValue';

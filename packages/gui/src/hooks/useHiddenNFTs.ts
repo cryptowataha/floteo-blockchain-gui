@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
-import type { NFTInfo } from '@chia/api';
-import { useHiddenList } from '@chia/core';
+import type { NFTInfo } from '@floteo/api';
+import { useHiddenList } from '@floteo/core';
 
 export default function useHiddenNFTs() {
   const [isNFTHidden, setIsNFTHidden, hiddenNFTs] =

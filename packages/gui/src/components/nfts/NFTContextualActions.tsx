@@ -2,19 +2,19 @@ import React, { useMemo, ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCopyToClipboard } from 'react-use';
 import { Trans } from '@lingui/macro';
-import type { NFTInfo } from '@chia/api';
-import { useSetNFTStatusMutation } from '@chia/api-react';
+import type { NFTInfo } from '@floteo/api';
+import { useSetNFTStatusMutation } from '@floteo/api-react';
 import {
   AlertDialog,
   DropdownActions,
   MenuItem,
   useOpenDialog,
-} from '@chia/core';
+} from '@floteo/core';
 import {
   LinkSmall as LinkSmallIcon,
   NFTsSmall as NFTsSmallIcon,
   OffersSmall as OffersSmallIcon,
-} from '@chia/icons';
+} from '@floteo/icons';
 import { ListItemIcon, Typography } from '@mui/material';
 import {
   ArrowForward as TransferIcon,
@@ -40,7 +40,7 @@ import isURL from 'validator/lib/isURL';
 import download from '../../util/download';
 import { stripHexPrefix } from '../../util/utils';
 import NFTBurnDialog from './NFTBurnDialog';
-import { useLocalStorage } from '@chia/core';
+import { useLocalStorage } from '@floteo/core';
 import computeHash from '../../util/computeHash';
 
 /* ========================================================================== */

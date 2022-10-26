@@ -1,5 +1,5 @@
-import { useGetNFTsByNFTIDsQuery } from '@chia/api-react';
-import { useLocalStorage } from '@chia/core';
+import { useGetNFTsByNFTIDsQuery } from '@floteo/api-react';
+import { useLocalStorage } from '@floteo/core';
 
 export default function useNachoNFTs() {
   const [nachoNFTsString] = useLocalStorage('nachoNFTs', '');

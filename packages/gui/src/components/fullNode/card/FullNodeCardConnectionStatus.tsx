@@ -1,8 +1,8 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { CardSimple } from '@chia/core';
-import { ServiceName } from '@chia/api';
-import { useService } from '@chia/api-react';
+import { CardSimple } from '@floteo/core';
+import { ServiceName } from '@floteo/api';
+import { useService } from '@floteo/api-react';
 
 export default function FullNodeCardConnectionStatus() {
   const { isRunning, isLoading, error } = useService(ServiceName.FULL_NODE);

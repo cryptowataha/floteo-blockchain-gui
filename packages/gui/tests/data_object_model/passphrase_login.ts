@@ -8,7 +8,7 @@ constructor(page: Page) {
     }
 
     async login(password: string) {
-        // Given I enter the correct credential in Passphrase field 
+        // Given I enter the correct credential in Passphrase field
         await this.page.locator('input[type="password"]').fill(password);
         // Then I click on Unlock
         await this.page.locator('text=Unlock Keyring').click();
@@ -24,16 +24,16 @@ constructor(page: Page) {
     }
 
     async changePassphrase(){
-      
+
         // Given I enter my Current Passphrase
         await this.page.locator('text=Current PassphraseCurrent Passphrase >> input[type="password"]').fill('Wafisimah2022!@');
 
-        // And 
+        // And
        //await this.page.locator('text=New PassphraseNew Passphrase >> input[type="password"]').click();
 
-        // And I enter my New Passphrase 
+        // And I enter my New Passphrase
         await this.page.locator('text=New PassphraseNew Passphrase >> input[type="password"]').fill('Wafisimah2022!#');
-        
+
         // Click text=Confirm New PassphraseConfirm New Passphrase >> input[type="password"]
         //await this.page.locator('text=Confirm New PassphraseConfirm New Passphrase >> input[type="password"]').click();
 
@@ -49,7 +49,7 @@ constructor(page: Page) {
         // And I select the Passphrase Save checkbox
         //await this.page.locator('input[name="cleanupKeyringPostMigration"]').check();
 
-        // And I click Change Passphrase 
+        // And I click Change Passphrase
         await this.page.locator('div[role="dialog"] button:has-text("Change Passphrase")').click();
 
         // Click button:has-text("OK")
@@ -58,7 +58,7 @@ constructor(page: Page) {
 
     // NEEDS ATTENTION-NOT WORKING!!
     async setPassphrase(){
-        // When I set a passphrase 
+        // When I set a passphrase
         await this.page.locator('[data-testid="SettingsPanel-set-passphrase"]').click();
         //await page.locator('[placeholder="Passphrase"]').click();
         await this.page.locator('[placeholder="Passphrase"]').fill('Wafisimah2022!@');
@@ -78,7 +78,7 @@ constructor(page: Page) {
         await this.page.locator('input[type="password"]').fill('Wafisimah2022!@');
         await this.page.locator('input[type="password"]').press('Enter');*/
 
-        // When I navigate to Settings Dialog page 
+        // When I navigate to Settings Dialog page
         //await this.page.locator('[data-testid="DashboardSideBar-settings"]').click();
 
         // And I disable Passphrase
@@ -89,12 +89,12 @@ constructor(page: Page) {
         await this.page.locator('button:has-text("OK")').click();
 
 
-      
+
 
 
          /*/ Click [data-testid="DashboardSideBar-settings"]
   await page.locator('[data-testid="DashboardSideBar-settings"]').click();
-  await page.waitForURL('file:///Users/jahifaw/Documents/Code/chia-tn-pw-latest/chia-blockchain/chia-blockchain-gui/packages/gui/build/renderer/index.html#/dashboard/settings/general');
+  await page.waitForURL('file:///Users/jahifaw/Documents/Code/floteo-tn-pw-latest/floteo-blockchain/floteo-blockchain-gui/packages/gui/build/renderer/index.html#/dashboard/settings/general');
   // Click [data-testid="SettingsPanel-remove-passphrase"]
   await page.locator('[data-testid="SettingsPanel-remove-passphrase"]').click();
   // Click input[type="password"]

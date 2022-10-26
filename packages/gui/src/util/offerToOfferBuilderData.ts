@@ -1,5 +1,5 @@
-import type { Wallet } from '@chia/api';
-import { mojoToCAT, mojoToChia } from '@chia/core';
+import type { Wallet } from '@floteo/api';
+import { mojoToCAT, mojoToChia } from '@floteo/core';
 import BigNumber from 'bignumber.js';
 import type OfferBuilderData from '../@types/OfferBuilderData';
 import type OfferSummary from '../@types/OfferSummary';

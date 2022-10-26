@@ -8,7 +8,7 @@ import {
   Flex,
   TooltipIcon,
   FormatLargeNumber,
-} from '@chia/core';
+} from '@floteo/core';
 import { Box, Divider, Typography } from '@mui/material';
 
 const StyledTitle = styled(Box)`

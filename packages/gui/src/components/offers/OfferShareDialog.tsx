@@ -11,8 +11,8 @@ import {
   useOpenDialog,
   useShowError,
   useOpenExternal,
-} from '@chia/core';
-import { OfferTradeRecord } from '@chia/api';
+} from '@floteo/core';
+import { OfferTradeRecord } from '@floteo/api';
 import {
   Button,
   Checkbox,
@@ -39,7 +39,7 @@ import child_process from 'child_process';
 import fs from 'fs';
 import path from 'path';
 
-const log = debug('chia-gui:offers');
+const log = debug('floteo-gui:offers');
 
 /* ========================================================================== */
 
@@ -77,7 +77,7 @@ type CommonDialogProps = {
 
 type OfferShareServiceDialogProps = CommonOfferProps & CommonDialogProps;
 
-const testnetDummyHost = 'offers-api-sim.chia.net';
+const testnetDummyHost = 'offers-api-sim.floteo.net';
 
 const OfferSharingProviders: {
   [key in OfferSharingService]: OfferSharingProvider;
@@ -252,7 +252,7 @@ async function postToOfferBin(
   log('OfferBin upload completed');
 
   if (testnet) {
-    return 'https://www.chia.net/offers';
+    return 'https://www.floteo.net/offers';
   }
 
   const { hash } = JSON.parse(responseBody);
@@ -303,7 +303,7 @@ async function postToHashgreen(
     log('Hashgreen upload completed');
 
     if (testnet) {
-      return 'https://www.chia.net/offers';
+      return 'https://www.floteo.net/offers';
     }
 
     const jsonObj = JSON.parse(responseBody);

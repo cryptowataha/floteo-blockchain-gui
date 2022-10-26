@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Trans } from '@lingui/macro';
-import type { NFTInfo } from '@chia/api';
+import type { NFTInfo } from '@floteo/api';
 import {
   Button,
   ButtonLoading,
@@ -13,7 +13,7 @@ import {
   useOpenDialog,
   validAddress,
   useShowError,
-} from '@chia/core';
+} from '@floteo/core';
 import {
   Dialog,
   DialogActions,
@@ -23,7 +23,7 @@ import {
   Typography,
 } from '@mui/material';
 import { useForm } from 'react-hook-form';
-import { useTransferNFTMutation } from '@chia/api-react';
+import { useTransferNFTMutation } from '@floteo/api-react';
 import NFTSummary from './NFTSummary';
 import NFTTransferConfirmationDialog from './NFTTransferConfirmationDialog';
 

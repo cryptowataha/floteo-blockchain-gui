@@ -3,8 +3,8 @@ import { Trans } from '@lingui/macro';
 import {
   useGetWalletsQuery,
   useCheckOfferValidityMutation,
-} from '@chia/api-react';
-import { Flex, ButtonLoading, Link, Loading, useShowError } from '@chia/core';
+} from '@floteo/api-react';
+import { Flex, ButtonLoading, Link, Loading, useShowError } from '@floteo/core';
 import { Alert, Grid } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import type OfferSummary from '../../@types/OfferSummary';

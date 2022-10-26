@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
-import { useGetCatListQuery, useGetWalletsQuery } from '@chia/api-react';
-import { CATToken, Wallet, useCurrencyCode } from '@chia/core';
-import { WalletType } from '@chia/api';
+import { useGetCatListQuery, useGetWalletsQuery } from '@floteo/api-react';
+import { CATToken, Wallet, useCurrencyCode } from '@floteo/core';
+import { WalletType } from '@floteo/api';
 
 export type AssetIdMapEntry = {
   walletId: number;

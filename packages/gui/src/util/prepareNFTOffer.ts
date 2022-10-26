@@ -1,5 +1,5 @@
-import type { NFTInfo } from '@chia/api';
-import { store, walletApi } from '@chia/api-react';
+import type { NFTInfo } from '@floteo/api';
+import { store, walletApi } from '@floteo/api-react';
 import BigNumber from 'bignumber.js';
 import { launcherIdFromNFTId } from './nfts';
 import type Driver from '../@types/Driver';

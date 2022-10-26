@@ -11,7 +11,7 @@ test.beforeAll(async () => {
   electronApp = await electron.launch({ args: ['./build/electron/main.js'] });
   //electronApp = await electron.launch({ headless: true });
   page = await electronApp.firstWindow();
-  
+
 });
 
 test.beforeEach(async () => {
@@ -32,11 +32,11 @@ test('Create new Wallet and logout', async () => {
 
   // Click text=Create a new private key
   await page.locator('text=Create a new private key').click();
-  // assert.equal(page.url(), 'file:///Users/jahifaw/Documents/Code/Chia-testnet-playwright/chia-blockchain/chia-blockchain-gui/packages/gui/build/renderer/index.html#/wallet/add');
+  // assert.equal(page.url(), 'file:///Users/jahifaw/Documents/Code/Chia-testnet-playwright/floteo-blockchain/floteo-blockchain-gui/packages/gui/build/renderer/index.html#/wallet/add');
 
   // Click button:has-text("Next")
   await Promise.all([
-    page.waitForNavigation(/*{ url: 'file:///Users/jahifaw/Documents/Code/Chia-testnet-playwright/chia-blockchain/chia-blockchain-gui/packages/gui/build/renderer/index.html#/dashboard/wallets/1' }*/),
+    page.waitForNavigation(/*{ url: 'file:///Users/jahifaw/Documents/Code/Chia-testnet-playwright/floteo-blockchain/floteo-blockchain-gui/packages/gui/build/renderer/index.html#/dashboard/wallets/1' }*/),
     page.locator('button:has-text("Next")').click()
   ]);
 
@@ -46,7 +46,7 @@ test('Create new Wallet and logout', async () => {
 
   // Call CLI on new wallet to check status
   await getWalletBalance(deleteWallet)
-  
+
   // Logout of the wallet_new
   await page.locator('[data-testid="ExitToAppIcon"]').click();
 
@@ -64,9 +64,9 @@ test('Create new Wallet and logout', async () => {
 
 });
 
- 
 
- 
+
+
 
 
 

@@ -5,7 +5,7 @@ import React, {
   useRef,
 } from 'react';
 import { useForm } from 'react-hook-form';
-import { Form } from '@chia/core';
+import { Form } from '@floteo/core';
 import { Grid } from '@mui/material';
 import OfferBuilderProvider from './OfferBuilderProvider';
 import OfferBuilderTradeColumn from './OfferBuilderTradeColumn';

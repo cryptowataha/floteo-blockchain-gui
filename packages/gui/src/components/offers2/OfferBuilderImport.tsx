@@ -6,9 +6,9 @@ import {
   // useOpenDialog,
   useSerializedNavigationState,
   useShowError,
-} from '@chia/core';
+} from '@floteo/core';
 import { Box, Card, Typography } from '@mui/material';
-import { useGetOfferSummaryMutation } from '@chia/api-react';
+import { useGetOfferSummaryMutation } from '@floteo/api-react';
 // import OfferDataEntryDialog from '../offers/OfferDataEntryDialog';
 import fs, { Stats } from 'fs';
 // import { IpcRenderer } from 'electron';
